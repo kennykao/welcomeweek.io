@@ -1,0 +1,8 @@
+{
+	"short_name": "Berkeley Welcome Week 2020",
+	"name": "Berkeley welcome week 2020",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
