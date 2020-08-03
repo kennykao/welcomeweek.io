@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACC,SACA,gBACA,iBAAmB,CAGpB,QACC,SAAW","file":"static/css/main.2846ebb4.css","sourcesContent":["body {\n\tmargin: 0;\n\tpadding-top: 2em;\n\toverflow-x: hidden;\n}\n\n.active {\n\tcolor: red;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}

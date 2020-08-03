@@ -4,6 +4,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
+		"dompurify": "^2.0.12",
 		"react": "^16.5.1",
 		"react-countdown": "^2.2.1",
 		"react-dom": "^16.5.1",

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Countdown from "react-countdown";
 import img from "./campus_ireland-wagner_staff.jpg";
 import EventsBackground from "./EventsBackground";
-import EventsGallery from "./EventsGallery";
+import DOMPurify from "dompurify";
 
 const StyledWelcome = styled.h1`
 	position: relative;
@@ -21,7 +21,7 @@ const HomeDiv = styled.div`
 	bottom: 19px;
 	background-image: url(${img});
 	width: 100%;
-	height: 377px;
+	height: 407px;
 	margin: auto;
 	text-align: center;
 `;
@@ -75,6 +75,7 @@ const EventsBackgroundContainer = styled.div`
 const EventsBackgroundImageContainer = styled.div`
 	position: absolute;
 	z-index: -999;
+	flex-shrink: 0;
 `;
 
 const CountDownStyle = styled.span`
@@ -85,15 +86,10 @@ const CountDownStyle = styled.span`
 	font-size: 26px;
 	line-height: 84px;
 `;
-const renderer = ({ days, hours, minutes, seconds }) => {
-	return (
-		<CountDownStyle>
-			{days}d {hours}h {minutes}m {seconds}s
-		</CountDownStyle>
-	);
-};
 
-const MainContentWrapper = styled.div``;
+const MainContentWrapper = styled.div`
+	flex: 1 0 auto;
+`;
 
 const MidSectionWrapper = styled.div`
 	text-align: center;
@@ -119,6 +115,8 @@ const PlaceHolderDiv = styled.div`
 	height: 220px;
 	margin: 10px;
 `;
+const countDownTimer =
+	'<div class="powr-countdown-timer" id="fd09fa71_1596262539"></div><script src="https://www.powr.io/powr.js?platform=react"></script>';
 function Home() {
 	return (
 		<React.Fragment>
@@ -128,7 +126,12 @@ function Home() {
 					<br></br>
 					Welcome Week
 				</StyledWelcome>
-				<Countdown date={"2020-08-20T00:00:00"} renderer={renderer} />
+				<div
+					className="content"
+					dangerouslySetInnerHTML={{
+						__html: DOMPurify.sanitize(countDownTimer),
+					}}
+				></div>
 			</HomeDiv>
 			<MainContentWrapper>
 				<MidSectionWrapper>
