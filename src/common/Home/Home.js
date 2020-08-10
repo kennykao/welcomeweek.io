@@ -92,10 +92,16 @@ const MainContentWrapper = styled.div`
 `;
 
 const MidSectionWrapper = styled.div`
+	// text-align: center;
+	margin: 150px 0px 150px 0px;
+	// display: flex;
+	// flex-direction: row;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 10% 40% 40% 10%;
+	position: relative;
 	text-align: center;
-	margin: 150px 250px 0 250px;
-	display: flex;
-	flex-direction: row;
+
 `;
 const EventsGalleryWrapper = styled.div`
 	display: flex;
@@ -135,6 +141,7 @@ function Home() {
 			</HomeDiv>
 			<MainContentWrapper>
 				<MidSectionWrapper>
+					<div></div>
 					<SplashDiv>
 						<PlaceHolderSplash>input splash here</PlaceHolderSplash>
 						<SplashBackground></SplashBackground>
