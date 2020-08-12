@@ -81,7 +81,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.10.4", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.7":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -6910,6 +6910,19 @@ react-error-overlay@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
+
+react-fitted-image@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-fitted-image/-/react-fitted-image-1.0.1.tgz#7d9c8e08c9acd7be5ad4add0c1144aa06261d69f"
+  integrity sha512-+cNGk1IkhKFvulTFwJxqRYqQMWAsBJuO2xih9AAhBufxnU9HwPFDetq3BqMgCUjP/CTn41pp2Myj07prQ5LR8Q==
+
+react-fitted-img@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/react-fitted-img/-/react-fitted-img-1.4.0.tgz#8b18080419d4b899adbdbc6b41fafe1ac08d35da"
+  integrity sha512-uzkeOCAcpkDYYL8OkElCzgvCKnACetUrLaJoAwRAxUw3KdI2pq/JAHhdofH/MBUx/dQH2FUypGEvwxlPhtWFXg==
+  dependencies:
+    "@babel/runtime" "^7.10.4"
+    prop-types "^15.7.2"
 
 react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1:
   version "16.13.1"

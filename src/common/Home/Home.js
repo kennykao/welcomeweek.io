@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from '@material-ui/core/Button'
+import FittedImage from 'react-fitted-image';
 import img from "./campus_ireland-wagner_staff.jpg";
 import EventsBackground from "./EventsBackground";
 import DOMPurify from "dompurify";
@@ -169,9 +170,9 @@ function Home() {
 					<GetConnectedDiv>
 						<GetConnectedText>Sunday Worship Service</GetConnectedText>
 						<div style={{marginBottom: '15px'}}>
-						Come join us virtually for service. 8/16 at 1:15 PM.
+						Join us for our virtual service. 8/16 at 1:15 PM.
 					</div>
-						<Button variant="contained" color="primary">Click Here!</Button>
+						<Button variant="contained" color="primary">Join</Button>
 					</GetConnectedDiv>
 				</SecondMidSectionWrapper>
 				<EventsBackgroundContainer>
