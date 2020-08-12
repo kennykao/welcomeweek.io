@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button'
 import img from "./campus_ireland-wagner_staff.jpg";
 import EventsBackground from "./EventsBackground";
 import DOMPurify from "dompurify";
+import nswn from "../images/nswn.png";
 
 const StyledWelcome = styled.h1`
 	position: relative;
@@ -63,7 +64,7 @@ const PlaceHolderSplash = styled.div`
 	left: 80px;
 	width: 345px;
 	height: 220px;
-	background: yellow;
+	background-image: url(${nswn});
 `;
 
 const EventsBackgroundContainer = styled.div`
@@ -124,6 +125,7 @@ const PlaceHolderDiv = styled.div`
 	height: 220px;
 	margin: 10px;
 `;
+
 const countDownTimer =
 	'<div class="powr-countdown-timer" id="fd09fa71_1596262539"></div><script src="https://www.powr.io/powr.js?platform=react"></script>';
 function Home() {
@@ -166,9 +168,9 @@ function Home() {
 					</SplashDiv>
 					<GetConnectedDiv>
 						<GetConnectedText>Sunday Worship Service</GetConnectedText>
-						<div>
+						<div style={{marginBottom: '15px'}}>
 						Come join us virtually for service. 8/16 at 1:15 PM.
-						</div>
+					</div>
 						<Button variant="contained" color="primary">Click Here!</Button>
 					</GetConnectedDiv>
 				</SecondMidSectionWrapper>

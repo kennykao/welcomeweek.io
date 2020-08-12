@@ -21,7 +21,7 @@ const StyledNavLink = styled(NavLink)`
 	color: white;
 	font-family: Roboto;
 	font-style: normal;
-	// font-weight: bold;
+	font-weight: bold;
 	text-decoration: none;
 `;
 
