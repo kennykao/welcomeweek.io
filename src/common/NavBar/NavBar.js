@@ -29,9 +29,7 @@ const StyledNavLinkList = styled.div`
 	position: absolute;
 	top: 25px;
 	right: 20px;
-	
-
-`
+`;
 function NavBar() {
 	return (
 		<StyledNav>
@@ -39,10 +37,10 @@ function NavBar() {
 				<StyledNavLink exact activeClassName="active" to="/">
 					Home
 				</StyledNavLink>
-				<StyledNavLink exact activeClassName="active" to="/">
+				<StyledNavLink exact activeClassName="active" to="/groups">
 					Groups
 				</StyledNavLink>
-				<StyledNavLink exact activeClassName="active" to="/">
+				<StyledNavLink exact activeClassName="active" to="/get-connected">
 					Get Connected
 				</StyledNavLink>
 			</StyledNavLinkList>

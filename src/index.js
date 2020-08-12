@@ -9,6 +9,8 @@ import {
 	Switch,
 } from "react-router-dom";
 import App from "./App";
+import GroupsPage from "./common/Groups";
+import GetConnectedPage from "./common/GetConnected";
 import Notfound from "./notfound";
 import NavBar from "./common/NavBar";
 
@@ -23,7 +25,8 @@ const routing = (
 			<hr />
 			<Switch>
 				<Route exact path="/" component={App} />
-				<Route exact path="/connect" component={App} />
+				<Route exact path="/groups" component={GroupsPage} />
+				<Route exact path="/get-connected" component={GetConnectedPage} />
 				<Route component={Notfound} />
 			</Switch>
 		</div>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Countdown from "react-countdown";
+import Button from '@material-ui/core/Button'
 import img from "./campus_ireland-wagner_staff.jpg";
 import EventsBackground from "./EventsBackground";
 import DOMPurify from "dompurify";
@@ -30,7 +30,7 @@ const GetConnectedDiv = styled.div`
 	position: relative;
 	height: 70px;
 	text-align: center;
-	margin-left: 250px;
+	margin-left: 50px;
 `;
 
 const GetConnectedText = styled.h1`
@@ -78,22 +78,13 @@ const EventsBackgroundImageContainer = styled.div`
 	flex-shrink: 0;
 `;
 
-const CountDownStyle = styled.span`
-	color: white;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 26px;
-	line-height: 84px;
-`;
-
 const MainContentWrapper = styled.div`
 	flex: 1 0 auto;
 `;
 
 const MidSectionWrapper = styled.div`
 	// text-align: center;
-	margin: 150px 0px 150px 0px;
+	margin: 150px 0px -100px 0px;
 	// display: flex;
 	// flex-direction: row;
 	display: grid;
@@ -101,8 +92,20 @@ const MidSectionWrapper = styled.div`
 	grid-auto-columns: 10% 40% 40% 10%;
 	position: relative;
 	text-align: center;
-
 `;
+
+const SecondMidSectionWrapper = styled.div`
+	// text-align: center;
+	margin: 0px 0px 100px 0px;
+	// display: flex;
+	// flex-direction: row;
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 10% 40% 40% 10%;
+	position: relative;
+	text-align: center;
+`;
+
 const EventsGalleryWrapper = styled.div`
 	display: flex;
 	flex-flow: row wrap;
@@ -143,17 +146,32 @@ function Home() {
 				<MidSectionWrapper>
 					<div></div>
 					<SplashDiv>
-						<PlaceHolderSplash>input splash here</PlaceHolderSplash>
+						<PlaceHolderSplash>input nswn splash here</PlaceHolderSplash>
 						<SplashBackground></SplashBackground>
+
 					</SplashDiv>
 					<GetConnectedDiv>
 						<GetConnectedText>Want to get connected?</GetConnectedText>
 						<div>
 							Welcome to Cal! Getting plugged in can be difficult, especially as
-							things are going virtual.
+							things are going virtual. If you want to get plugged in, fill out this form below!
 						</div>
 					</GetConnectedDiv>
 				</MidSectionWrapper>
+				<SecondMidSectionWrapper>
+					<div></div>
+					<SplashDiv>
+						<PlaceHolderSplash>input sws splash here</PlaceHolderSplash>
+						<SplashBackground></SplashBackground>
+					</SplashDiv>
+					<GetConnectedDiv>
+						<GetConnectedText>Sunday Worship Service</GetConnectedText>
+						<div>
+						Come join us virtually for service. 8/16 at 1:15 PM.
+						</div>
+						<Button variant="contained" color="primary">Click Here!</Button>
+					</GetConnectedDiv>
+				</SecondMidSectionWrapper>
 				<EventsBackgroundContainer>
 					<EventsBackgroundImageContainer>
 						<EventsBackground />
